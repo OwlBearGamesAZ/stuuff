@@ -1,19 +1,3 @@
----
-import Calendar from '../components/Calendar.astro';
----
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Calendar Page</title>
-  </head>
-  <body>
-    <h1>My Calendar</h1>
-    <Calendar width="1000" height="400" />
-  </body>
-</html>
-    
 export interface Action {
     _type?: string;
     label: string;
