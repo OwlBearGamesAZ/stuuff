@@ -13,3 +13,11 @@ route = { pattern = "staging.example.org/*", zone_name = "example.org" }
 kv_namespaces = [
   { binding = "<MY_NAMESPACE>", id = "<STAGING_KV_ID>" }
 ]
+fun main() {
+    @Suppress("UNUSED_VARIABLE")
+    val eventListener = EventListener {event ->
+        event.asDynamic().respondWith(fetch(event.asDynamic().request as Request))
+        Unit
+    }
+    js("addEventListener('fetch', eventListener)")
+}
