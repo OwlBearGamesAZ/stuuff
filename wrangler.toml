@@ -13,3 +13,10 @@ route = { pattern = "staging.example.org/*", zone_name = "example.org" }
 kv_namespaces = [
   { binding = "<MY_NAMESPACE>", id = "<STAGING_KV_ID>" }
 ]
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
+
+
+
+
