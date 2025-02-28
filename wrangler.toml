@@ -1,5 +1,5 @@
 # Top-level configuration
-name = "stuuf"
+name = 'stuuff'
 main = "src/index.js"
 compatibility_date = "2022-07-12"
 
